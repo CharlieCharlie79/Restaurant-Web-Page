@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fira+Sans:wght@300&display=swap');
+*
+{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+a
+{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-family: 'Dancing Script', cursive;
+}
+
+i
+{
+    color:black;
+}
+
+.warning-container
+{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.warning-message
+{
+    text-align: center;
+    background-color: red;
+    color: white;
+    padding: 5px 0;
+    font-weight: 300;
+}
+
+.options-container
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(92, 154, 207, 0.966);
+}
+
+.options-tags
+{
+    padding: 15px 50px;
+}
+
+.options-tags a
+{
+    transition: 0.5s;
+}
+
+.options-tags a:hover
+{
+    color:rgb(223, 10, 10);
+    font-size: 2rem;
+}
+
+.fa-skull
+{
+    font-size: 3rem;
+    transition: 0.5s;
+}
+
+.fa-skull:hover
+{
+    color: grey;
+}
+
+@media (max-width:600px)
+{
+    .options-container
+    {
+        margin: auto;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;    
+    }  
+}
+
+
+.slider-container
+{
+    max-width: 100%;
+    position: relative;
+    margin: auto; 
+}
+
+.slider-container img
+{
+    height: 50rem;
+    width: 100%;
+}
+
+.prev, .next
+{
+    cursor: pointer;
+    position:absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight:bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius:  0 3px 3px 0;
+    user-select: none;
+    font-size: 3rem;
+}
+
+.next
+{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover
+{
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+}
+
+.fade
+{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade
+{
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+  @keyframes fade
+{
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+ 
+.description-container h1
+{
+    padding: 5rem 15rem;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#map
+{
+    height: 250px;
+    width: 400px;
+}
