@@ -20,6 +20,12 @@ i
     color:black;
 }
 
+img
+{
+    height: 300px;
+    width: 400px;
+}
+
 .warning-container
 {
     position: sticky;
@@ -110,7 +116,7 @@ i
     transition: 0.6s ease;
     border-radius:  0 3px 3px 0;
     user-select: none;
-    font-size: 3rem;
+    font-size: 6rem;
 }
 
 .next
@@ -152,8 +158,86 @@ i
     font-family: 'Fira Sans', sans-serif;
 }
 
+.map-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(199, 189, 175);
+}
+
+.map-container h1
+{
+    font-size: 3rem;
+    text-decoration: underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 #map
 {
-    height: 250px;
-    width: 400px;
+    height: 350px;
+    width: 500px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 2rem 0;
+}
+
+.menu-section
+{
+    background-color: rgb(240, 212, 184);
+}
+
+.menu-title
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 0;
+}
+
+.menu-title h1
+{
+    font-size: 5rem;
+}
+
+.menu-title h3
+{
+    font-size: 2rem;
+}
+
+.menu-title i
+{
+    font-size: 3rem;
+}
+
+.food-section
+{
+    width: auto;
+    min-width: 200px;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+   align-items: center;
+}
+
+.food-section header
+{
+    text-align: center;
+    margin: 20px;
+    
+}
+
+.food-section img
+{
+    border-radius: 15px;
+    margin: 20px 0;
+    border: 1px solid floralwhite;
+    transition: 0.5s;
+    cursor:pointer;
+}
+
+.food-section img:hover
+{
+    scale: 3rem;
 }
